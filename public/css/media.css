@@ -1,0 +1,23 @@
+@media (max-width: 768px) {
+ .form {
+     max-width: unset;
+ }
+
+ .form-block .form-label {
+        width: 100%;
+ }
+
+    .form-block .form-label:last-child {
+        margin-left: 24px;
+    }
+
+}
+
+@media (max-width: 556px) {
+    .form {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+}

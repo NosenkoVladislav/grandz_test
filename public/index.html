@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact form</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <section class="page">
+        <form method="POST" class="form" id="mainForm">
+            <h3 class="title">You are almost done!</h3>
+            <div class="form-block">
+                <label for="fst_name" class="form-title">First Name</label>
+                <input type="text"
+                       class="form-input"
+                       id="fst_name"
+                       name="f_name"
+                       data-rule="required"
+                >
+            </div>
+            <div class="form-block">
+                <label for="lst_Name" class="form-title">Last Name</label>
+                <input type="text"
+                       class="form-input"
+                       id="lst_Name"
+                       name="l_name"
+                       data-rule="required"
+                >
+            </div>
+            <div class="form-block">
+                <label for="Email" class="form-title">Email</label>
+                <input type="text"
+                       class="form-input"
+                       id="email"
+                       name="email"
+                       data-rule="required email"
+                >
+            </div>
+            <div class="form-block">
+                <label for="phone" class="form-title">Phone number</label>
+                <input type="text"
+                       class="form-input"
+                       id="phone"
+                       name="phone"
+                       data-rule="required phone"
+                >
+            </div>
+            <div class="form-block">
+                <h4 class="form-title">Please, select delivery type</h4>
+                <input type="radio"
+                       class="form-radio"
+                       id="mail_delivery"
+                       value="by_mail"
+                       name="delivery"
+                       checked="checked"
+                       data-rule="nonrequired"
+                >
+                <label for="mail_delivery" class="form-label">Mail delivery</label>
+                <input type="radio"
+                       class="form-radio"
+                       id="self_delivery"
+                       value="self"
+                       name="delivery"
+                       data-rule="nonrequired"
+                >
+                <label for="self_delivery" class="form-label">Pick up from store</label>
+            </div>
+            <div class="form-block" id="shipping">
+                <label for="Phone" class="form-title">Shipping Address</label>
+                <input type="text"
+                       class="form-input"
+                       id="address"
+                       name="address"
+                       data-rule="required"
+                >
+            </div>
+            <div class="form-block __lg __centred">
+                <button class="btn" type="submit">Send</button>
+            </div>
+        </form>
+        <div id="apiReq"></div>
+    </section>
+</body>
+<script src="main.js"></script>
+</html>
